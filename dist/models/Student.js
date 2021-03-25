@@ -7,12 +7,12 @@ exports["default"] = void 0;
 
 var _sequelize = _interopRequireDefault(require("sequelize"));
 
-var _database = require("../database/database");
+var _database = require("../database/config/database");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 var Student = _database.sequelize.define('student', {
-  id: {
+  idStudent: {
     type: _sequelize["default"].INTEGER,
     primaryKey: true
   },
